@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1d1d1d;
+    color: white;
+    background-image: url(weather-1.jpg);
+    background-repeat: no-repeat;
+    font-family: Trebuchet MS, sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+p {
+    color: #ebebeb;
+    display: inline-block;
+}
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;}
+.weather-container div {
+    margin: 10px;
+}
+.weather-container p {
+    margin-bottom: 5px;
+}
+.title {
+    text-align: center;
+}
+#location {
+    height: 35px;
+    width: 200px;
+    background-color: #dfdfdf;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    font-size: .85rem;
+}
+#search-btn {
+    width: 50px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-family: Trebuchet MS, sans-serif;
+}
+.display-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.display-info * {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#display-location {
+    margin-top: 50px;
+}
+#display-temp {
+    font-size: 2.5rem;
+    padding-left: 25px;
+}
+.temps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+    .weather-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+    .display-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .input-box {
+        position: fixed;
+        top: 0;
+    }
+    #display-location {
+        font-size: 5rem;
+        margin-top: 150px;
+    }
+    #display-temp {
+        font-size: 5rem;
+    }
+    #display-desc {
+        font-size: 3rem;
+    }
+    .temps {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .temps p {
+        font-size: 1.5rem;
+    }
+}
